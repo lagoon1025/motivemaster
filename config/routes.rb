@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'tweets/index'
   devise_for :users
   root "rooms#index"
   resources :users, only: [:edit, :update]
