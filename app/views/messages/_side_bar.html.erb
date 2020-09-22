@@ -10,12 +10,6 @@
 </div>
 
 <div class="rooms">
-  <div class="stratus-room"%>
-    <div class="room-name">
-      <%= link_to "トップに戻る", root_path%>
-    </div>
-  </div>
-
   <% current_user.rooms.each do |room| %>
     <div class="room">
       <div class="room-name">
