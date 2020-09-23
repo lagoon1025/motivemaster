@@ -9,9 +9,13 @@
         <%= f.text_field :name, class: 'chat__room_name chat-room-form__input', placeholder: 'チャットルーム名を入力してください'%>
       </div>
     </div>
+
     <div class='chat-room-form__field'>
     </div>
-    <div class='chat-room-form__field'>
+
+    <%
+=begin%>
+ <div class='chat-room-form__field'>
       <div class='chat-room-form__field--left'>
         <label class='chat-room-form__label' for='chat_room_チャットメンバー'>チャットメンバー</label>
       </div>
@@ -24,7 +28,20 @@
         </select>
         <input name="room[user_ids][]" type="hidden" value=<%=current_user.id%>>
       </div>
+    </div> 
+<%
+=end%>
+
+    <div class='chat-room-form__field'>
+      <div class='chat-room-form__field--left'>
+        <%= f.label :現在の感情, class: 'chat-room-form__label'%>
+      </div>
+      <div class='chat-room-form__field--right'>
+        <%= f.collection_select(:motivation_id, Motivation.all, :id, :name, {include_blank: "---"}, {class:"select-box", id:"item-category"}) %>
+      </div>
     </div>
+    
+    
     <div class='chat-room-form__field'>
       <div class='chat-room-form__field--left'></div>
       <div class='chat-room-form__field--right'>
