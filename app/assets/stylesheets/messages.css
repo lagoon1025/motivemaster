@@ -1,14 +1,14 @@
-.wrapper{
+.wrapper {
   display: flex;
 }
 
-.side-bar{
+.side-bar {
+  background-color: #253141;
   width: 300px;
   height: 100vh;
-  background-color: #253141;
 }
 
-.side-bar-header{
+.side-bar-header {
   height: 100px;
   padding: 0 20px;
   background-color: #253141;
@@ -27,68 +27,67 @@
   font-size: 10px;
 }
 
-.create-room a{
+.create-room a {
   border: 1px solid lightblue;
   padding: 14px;
   color: deepskyblue;
   text-decoration: none;
 }
 
-.rooms{
-  background-color: #2F3E51;
+.rooms {
+  background-color: #2f3e51;
   height: calc(100vh - 100px);
   padding: 0 20px;
   overflow: scroll;
 }
 
-.room{
+.room {
   padding: 20px 0 40px;
 }
 
-.room-name a{
+.room-name a {
   text-decoration: none;
   color: white;
 }
 
-.chat{
-  width: calc(100% - 300px);
+.chat {
   background-color: #ffffff;
+  width: calc(100% - 300px);
 }
 
-
-.chat-header{
+.chat-header {
   height: 100px;
   padding: 0 40px;
   display: flex;
   justify-content: space-between;
 }
 
-.header-title{
+.header-title {
   color: #333;
   font-size: 24px;
   margin-top: 36px;
 }
 
-.header-button{
+.header-button {
   margin-top: 40px;
 }
 
-.header-button a{
+.header-button a {
   text-decoration: none;
   border: 1px solid darkred;
   color: darkred;
   padding: 20px;
 }
 
-.messages{
+.messages {
   background-color: #FAFAFA;
   height: calc(100vh - 100px - 90px);
   padding: 46px 40px 0;
   overflow: scroll;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
-.message{
+.message {
   margin: 10px 0;
 }
 
@@ -96,7 +95,7 @@
   display: flex;
 }
 
-.message-upper{
+.message-user {
   color: #434a54;
   font-size: 16px;
 }
@@ -117,17 +116,17 @@
   margin-bottom: 40px;
 }
 
-.form{
+.form {
   background-color: #DDDDDD;
   height: 90px;
   padding: 20px 40px;
   display: flex;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 .form-input {
   background-color: white;
-  display: flex;
+  /* display: flex; */
   width: 100%;
 }
 
