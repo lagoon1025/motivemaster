@@ -84,7 +84,7 @@
   height: calc(100vh - 100px - 90px);
   padding: 46px 40px 0;
   overflow: scroll;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 }
 
 .message {
@@ -121,12 +121,12 @@
   height: 90px;
   padding: 20px 40px;
   display: flex;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 }
 
 .form-input {
   background-color: white;
-  /* display: flex; */
+  display: flex;
   width: 100%;
 }
 
@@ -147,7 +147,7 @@
   padding: 0 20px;
 }
 
-.form-image{
+.form-image {
   font-size: 12px;
   background-color: lightblue;
   color: white;
