@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :calendars
   get 'tweets/index'
   devise_for :users
   root "rooms#index"
