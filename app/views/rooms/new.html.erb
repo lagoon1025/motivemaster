@@ -1,14 +1,19 @@
 <div class='chat-room-form'>
-  <h1>新規ツイート</h1>
+  <h1>日程を選択</h1>
   <%=form_with model: @room, local: true do |f|%>
-    <div class='chat-room-form__field'>
+
+    <%
+=begin%>
+ <div class='chat-room-form__field'>
       <div class='chat-room-form__field--left'>
         <%= f.label :ツイート, class: 'chat-room-form__label'%>
       </div>
       <div class='chat-room-form__field--right'>
         <%= f.text_field :name, class: 'chat__room_name chat-room-form__input', placeholder: 'ツイートを記入してください'%>
       </div>
-    </div>
+    </div> 
+<%
+=end%>
 
     <div class='chat-room-form__field'>
     </div>
@@ -32,12 +37,25 @@
 <%
 =end%>
 
-    <div class='chat-room-form__field'>
+    <%
+=begin%>
+ <div class='chat-room-form__field'>
       <div class='chat-room-form__field--left'>
         <%= f.label :現在の感情, class: 'chat-room-form__label'%>
       </div>
       <div class='chat-room-form__field--right'>
         <%= f.collection_select(:motivation_id, Motivation.all, :id, :name, {include_blank: "---"}, {class:"select-box", id:"item-category"}) %>
+      </div>
+    </div> 
+<%
+=end%>
+
+    <div class='chat-room-form__field'>
+      <div class='chat-room-form__field--left'>
+        <%= f.label :日程, class: 'chat-room-form__label'%>
+      </div>
+      <div class='chat-room-form__field--right'>
+        <input name="date" type="date" />
       </div>
     </div>
     
@@ -45,7 +63,7 @@
     <div class='chat-room-form__field'>
       <div class='chat-room-form__field--left'></div>
       <div class='chat-room-form__field--right'>
-        <%= f.submit "Create Tweet", class: 'chat-room-form__action-btn'%>
+        <%= f.submit "Create", class: 'chat-room-form__action-btn'%>
       </div>
     </div>
   <% end %>
