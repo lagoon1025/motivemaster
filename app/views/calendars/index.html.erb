@@ -1,21 +1,29 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Calendars</h1>
+<%
+=begin%>
+ <h1>Calendars</h1> 
+<%
+=end%>
 
 <table>
-  <thead>
+  <%
+=begin%>
+ <thead>
     <tr>
       <th>Name</th>
       <th>Start time</th>
       <th colspan="3"></th>
     </tr>
-  </thead>
+  </thead> 
+<%
+=end%>
 
   <tbody>
     <% @calendars.each do |calendar| %>
       <tr>
         <td><%= calendar.name %></td>
-        <td><%= calendar.start_time %></td>
+        <td><%= calendar.start_time("%Y-%m-%d %H:%M") %></td>
         <td><%= link_to 'Show', calendar %></td>
         <td><%= link_to 'Edit', edit_calendar_path(calendar) %></td>
         <td><%= link_to 'Destroy', calendar, method: :delete, data: { confirm: 'Are you sure?' } %></td>
