@@ -27,3 +27,13 @@
 <br>
 
 <%= link_to 'New Calendar', new_calendar_path %>
+
+<%= month_calendar events: @calendars do |date, calendars| %>
+  <%= date %>
+
+  <% calendars.each do |calendar| %>
+    <div>
+      <%= calendar.name %>
+    </div>
+  <% end %>
+<% end %>
