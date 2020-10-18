@@ -7,7 +7,8 @@ class Room < ApplicationRecord
   has_many :messages, dependent: :destroy  
 
   
-  validates :name, presence: true
-  validates :motivation_id, presence: true
+  # validates :name, presence: true
+  # validates :motivation_id, presence: true
+  # validates :days, presence: true
 
 end
