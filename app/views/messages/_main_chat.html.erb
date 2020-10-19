@@ -2,6 +2,8 @@
   <div class="left-header">
     <div class="header-title">
       <%= @room.date%>
+      <%= "現在の感情は" %>
+      <%= @messages.motivation_id %>
     </div>
   </div>
   <div class="right-header">
@@ -23,6 +25,6 @@
       <%= f.file_field :image, class: 'hidden' %>
     </label>
   </div>
-  <%= f.collection_select(:motivation_id, Motivation.all, :id, :name, {include_blank: "現在の感情"}, {class:"select-box", id:"item-category"}) %>
+  <%= f.collection_select(:motivation_id, Motivation.all, :id, :name, {class:"select-box", id:"item-category"}) %>
   <%= f.submit '送信', class: 'form-submit' %>
 <% end %>
