@@ -66,3 +66,7 @@ gem 'image_processing', '~> 1.2'
 gem 'simple_calendar', '~> 2.0'
 
 gem 'active_hash'
+
+group :production do
+  gem 'rails_12factor'
+end

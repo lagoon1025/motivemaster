@@ -24,11 +24,11 @@ class MessagesController < ApplicationController
   def calcmotion
     @point = Message.where(room_id: @room.id).sum(:motivation_id)
     if @point == 0
-      @point = "普通です"
+      @point = "普通です。"
     elsif @point >= 1
-      @point = "ハッピーです。楽しく過ごしましょう"
+      @point = "ハッピーです。"
     else
-      @point = "悲しいです。以下の曲を聴いて元気になりましょう"
+      @point = "悲しいです。"
     end
     # if @message.motivation_id.is_a?(Integer)
     #   puts "数値"
