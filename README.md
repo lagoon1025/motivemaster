@@ -128,16 +128,16 @@ SNS疲れを治すにはSNSから離れるのが解決策の一つですが、�
 ver2.6.5
 
 ## 使用したGEM
-rspec
-actory_bot
-faker
-Simple_Calendar
-Active_Hash
-Rails_12factor
-devise
-pry_rails
-mini_magick
-image_processing
+- rspec
+- Factory_bot
+- faker
+- Simple_Calendar
+- Active_Hash
+- Rails_12factor
+- devise
+- pry_rails
+- mini_magick
+- image_processing
 
 
 This README would normally document whatever steps are necessary to get the
