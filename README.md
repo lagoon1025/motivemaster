@@ -127,6 +127,9 @@ SNS疲れを治すにはSNSから離れるのが解決策の一つですが、�
 ## Rubyのver
 ver2.6.5
 
+## データベース環境
+Mysql
+
 ## 使用したGEM
 - rspec
 - Factory_bot
