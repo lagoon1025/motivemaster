@@ -1,6 +1,3 @@
-# README
-
-<<<<<<< HEAD
 # アプリケーション名
 MotiveMaster
 
@@ -10,6 +7,19 @@ MotiveMaster
 
 # URL
 https://motivemaster.herokuapp.com/
+
+# テスト用アカウント
+## ログインID
+tester01@gmail.com
+
+## パスワード
+tester01
+
+# 挙動確認用動画
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=c42SudJ8SQs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
 
 
 # テーブル設計
